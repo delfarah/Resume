@@ -1,111 +1,121 @@
 \documentclass[margin, 10pt]{res}
 
 \usepackage{helvet}
-\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 \usepackage{changepage}   % for the adjustwidth environment
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+ 
+\pagestyle{fancy}
+\chead{
+\begin{adjustwidth}{-3.5cm}{}
+\moveleft.5\hoffset\centerline{\large\bf Masood Delfarah, Ph.D. Candidate}
+\begin{tabular}{l r}
+\\
+\href{http://web.cse.ohio-state.edu/~delfarah.1/}{http://web.cse.ohio-state.edu/$\sim$delfarah.1}    & \hspace{2.5in}  \href{mailto:delfarah.1@osu.edu}{delfarah.1@osu.edu} \\
+\href{https://www.linkedin.com/in/mdelfarah/}{https://www.linkedin.com/in/mdelfarah/}    & \hspace{2.5in}  {Tel: (614) 477-7344} \\
+\end{tabular}
+\\
+\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.5pt}\smallskip
+\end{adjustwidth}
+}
+%\rfoot{\thepage}
 
-%\usepackage{newcent} %alternative font
+\setlength{\headheight}{45.0pt}
+\setlength{\footskip}{10.0pt}
 
 \setlength{\textwidth}{5.1in} % Text width of the document
+\setlength{\textheight}{8.1in} % Text width of the document
 
 \begin{document}
-\moveleft.5\hoffset\centerline{\large\bf Masood Delfarah} % Your name at the top
- 
-\moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip % Horizontal line after name; adjust line thickness by changing the '1pt'
- 
-\begin{adjustwidth}{-3.5cm}{}
-\begin{tabular}{l r}
-Perception and Neurodynamics Lab    & \hspace{1.5in} \href{http://web.cse.ohio-state.edu/~delfarah.1/}{http://web.cse.ohio-state.edu/$\sim$delfarah.1} \\
- 2015 Neil Avenue    & \hspace{0.9in}  Email: \href{mailto:delfarah.1@osu.edu}{delfarah.1@osu.edu}    \\
-Columbus, OH 43210, U.S.A. &  \hspace{0.9in} Phone: +1 (614) 477-7344   \\
-\end{tabular}
-\end{adjustwidth} 
-
-
 \begin{resume}
-
 \section{RESEARCH\\INTERESTS}
 
 \begin{tabular}{l l}
-Speech Separation    & \hspace{0.3in}  Speech Dereverberation \\
-Deep Learning    & \hspace{0.3in}   Robust Speaker Recognition \\
-Statistical Machine Learning
+\textbf{Monaural Speech Enhancement}    & \hspace{0.3in}   Automatic Speech Recognition\\ 
+\textbf{Speech Dereverberation}    & \hspace{0.3in}    Deep Learning\\ 
+Microphone Array Speech Processing  & \hspace{0.3in} Statistical Machine Learning
 \end{tabular}
 
-
 \section{EDUCATION}
-
 \textbf{Department of Computer Science and Eng., The Ohio State University }  \\
-\textbf{Ph.D. in Computer Eng.} \hfill Sep. 2013 -- Present \\
+\textbf{Ph.D. in Computer Eng.} \hfill Fall 2013 -- Present \\
 \textbf{Supervisor:} Prof. DeLiang Wang
 
-\textbf{School of Electrical and Computer Engineering, University of Tehran}, Iran\\
-\textbf{B.Sc. in Computer Eng. (Major: Software Eng.)} \hfill Sep. 2008 -- Aug. 2013 \\
+\textbf{School of Electrical and Computer Engineering, The University of Tehran}\\
+\textbf{B.Sc. in Computer Eng.} \hfill Fall 2008 -- Spring 2013 \\
 \textbf{GPA:} 16.57/20.00 (top 10\%).
 
 
-
-\section{PUBLICATIONS}
-\textit{Journal papers:}\\
+\section{PUBLICATIONS AND PRESENTATIONS}
+\textit{Journal papers:}
 \begin{itemize}
-\item Eric W. Healy, \textbf{Masood Delfarah}, Jordan L. Vasko, Brittney L. Carter, and DeLiang Wang, ``An algorithm to increase intelligibility for hearing-impaired listeners in the presence of a competing talker.'' \textit{Journal of the Acoustical Society of America}, Accepted on 14 May 2017.
-\item \textbf{Masood Delfarah} and DeLiang Wang, ``Features for masking-based monaural speech separation in reverberant conditions.'' \textit{IEEE/ACM Transactions on Audio, Speech, and Language Processing}, vol. 25, pp. 1085-1094 , 2017.
-\item Maryam S. Mirian , \textbf{Masood Delfarah} , and Behzad Moshiri , ``Proposing a Unified Knowledge and Experience-based System using Information Fusion Approach to Facilitate the Disaster Management Process'' \textit{Disaster Management Knowledge Quarterly}, vol. 2, pp 215-227 , 2012. 
+\item Eric W. Healy, \textbf{Masood Delfarah}, Jordan L. Vasko, Brittney L. Carter, and DeLiang Wang, ``An algorithm to increase intelligibility for hearing-impaired listeners in the presence of a competing talker.'' \textit{The Journal of the Acoustical Society of America}, vol. 141, pp. 4230$-$4239, 2017.
+\item \textbf{Masood Delfarah} and DeLiang Wang, ``Features for masking-based monaural speech separation in reverberant conditions.'' \textit{IEEE/ACM Transactions on Audio, Speech, and Language Processing}, vol. 25, pp. 1085$-$1094, 2017.
+\item Maryam S. Mirian, \textbf{Masood Delfarah} , and Behzad Moshiri , ``Proposing a Unified Knowledge and Experience-based System using Information Fusion Approach to Facilitate the Disaster Management Process'' \textit{Disaster Management Knowledge Quarterly} (in Persian), vol. 2, pp. 215$-$227, 2012. 
 \end{itemize}
 
-\textit{Conference papers:}\\
+\textit{Conference papers:}
 \begin{itemize}
-\item Eric W. Healy, \textbf{Masood Delfarah}, Jordan L. Vasko, and Brittney L. Carter, and DeLiang Wang, ``Can a trained deep neural network be implemented into hearing technology?'' \textit{Acoustics ’17 Boston}, 2017.
-\item Eric W. Healy, \textbf{Masood Delfarah}, Jordan L. Vasko, Brittney L. Carter, and DeLiang Wang, ``An algorithm to increase intelligibility for hearing-impaired listeners in the presence of a competing talker'' \textit{Acoustics ’17 Boston}, 2017.
-\item \textbf{Masood Delfarah} and DeLiang Wang, ``A feature study for masking-based reverberant speech separation.'' \textit{Proceedings of INTERSPEECH-17}, pp. 555-559, 2016.
+\item \textbf{Masood Delfarah} and DeLiang Wang, ``A feature study for masking-based reverberant speech separation.'' \textit{Proceedings of INTERSPEECH}, pp. 555$-$559, 2016.
 \end{itemize}
 
-\section{SELECT \\ RESEARCH \\ PROJECTS}
-\textit{Graduate Research Associate:}\hfill Summer 2014- Current. \\
+\textit{Selected poster presentations:}
 \begin{itemize}
-\item Two-talker speech separation in reverberant conditions.\\
-Speech separation in reverberant conditions has yet to be explored. We utilize \textit{Twnsorflow} two LSTMs jointly to do separation and then dereverberation. Our evaluations show that this two-stage system gains significant improvement based on objective intelligibility scores. Our metrics include STOI, PESQ, and fwSegSNR.
-\item Feature study for reverberant separation.\\
-We study a wide range of features for reverberant speech separation. We find that some features are particularly good for reverberation. We also find feature combinations for reverberant conditions that outperform previously designed ones from other methods.
-\item Anechoic two-talker separation.\\
-We design a speech separation algorithm based on DNNs and test it on hearing impared listeners. We find that hearing impared listeners get substantial benefit from the processed speech. Their inteligibility can match normal hearing listeners.
+\item Eric W. Healy, \textbf{Masood Delfarah}, Jordan L. Vasko, and Brittney L. Carter, and DeLiang Wang, ``Can a trained deep neural network be implemented into hearing technology?'' \textit{Acoustics '17 Boston}, 2017.
+\item Eric W. Healy, \textbf{Masood Delfarah}, Jordan L. Vasko, Brittney L. Carter, and DeLiang Wang, ``An algorithm to increase intelligibility for hearing-impaired listeners in the presence of a competing talker'' \textit{Acoustics '17 Boston}, 2017.
 \end{itemize}
 
-\textit{Undergraduate research assistant:}\hfill Fall 2011- Spring 2013. \\
-Supervisors: Dr. Maryam S. Mirian, Dr. Masoud Asadpour.\\
+\section{RESEARCH \\ EXPERIENCE}
+\textit{Graduate Research:}
 \begin{itemize}
-\item \textbf{BsC thesis:} Designing and implementing a learning style classifier for toddlers, based on cognitive traits of childrenand Information Processing Theories. We used decision trees to predict children success based on first year performance using ECLS-K dataset  from U.S. department of Education.
-\item Proposing a knowlwdge-base for disaster management Superviser: summerize the abstract and add to here.
-
-\item Analyzed Persian Blogosphere to Obtain Social Network of Iranian Politicians. 
-Frequency in which politicians names co-occur in the social network found to have relationship with how close those two are. We obtained network of politicans with graph clustering using \textit{Gephi}.
+\item Colaborated in a team to duplicate speaker independent speech separation methods such as deep clustering deep attractor network and permutation invariant training
+\item Did augumated object detection and question answering
+\item Used Matlab to do cochannel speaker identification in reverberant conditions
+\item Implemented deep neural network to do speech separation in reverberant and anechoic conditions using matlab
+	\subitem did feature study and SFFS and group lasso
+	\subitem did anechoic training and set up experiments
+	\subitem did reverberant two-stage Drev and denoise using tensorflow
+\item did DNN-based cochannel speaker identification 
 \end{itemize}
 
-
-\section{HONORS}
+\textit{Undergraduate research:}
 \begin{itemize}
-\item Granted acceleration in the PhD qualification exam at Computer Science and Engineering department at The Ohio State University \hfill Summer 2014
-\item Scholarship from OSU
-\item Titled exceptional talented student at the university of Tehran in 2nd, 5th, and 8th semester in BSc. \hfill 2008-2013
-\item Ranked 729 among 400,000+ applicants applicants in the nationwide University
-Entrance Exam for Undergraduate students. \hfill Summer 2008.
+\item \textbf{(BsC thesis)} Designing and implementing a learning style classifier for toddlers, based on cognitive traits of childrenand Information Processing Theories on the ELCK-12 dataset.
+\item Proposing a knowlwdge-base for disaster management Superviser
+\item Analyzed Persian Blogosphere to Obtain Social Network of Iranian Politicians and visualizing and graph clustering using \textit{Gephi}.
 \end{itemize}
 
-\section{SELECT \\ TEACHING \\ EXPERIENCE}
+\section{PROFESSIONAL \\ EXPERIENCE}
+\textit{Reviewer:}
 \begin{itemize}
-\item Held Lab sessions and Graded Homework, and exams for 160 students, CSE 2111: Modeling and Problem Solving with Spreadsheets and Databases, osu/cse Spring 2014
-\item Graded Homework, CSE 2321: Foundations I: Discrete Structures, osu/cse Fall 2013
-\item designed and grade homework for Design and Analysis of Algorithms, UT, ECE, Spring 2012
-\item Graded homework for  Discrete Mathematics Course, UT, ECE, Spring 2012
-\item Head TA and homework organizer, held Prolog tutorial sessions, and designed programming assingments, UT, ECE, Fall 2011.
-
+\item IEEE/ACM Transactions on Audio, Speech, and Language Processing
+\item Speech Communication
 \end{itemize}
+
+\textit{Graduate Teaching Assistant, The Ohio State University:}
+\begin{itemize}
+\item Modeling and Problem Solving with Spreadsheets and Databases\hfill Spring 2017
+\item Modeling and Problem Solving with Spreadsheets and Databases\hfill Spring 2014 
+\item Foundations I: Discrete Structures\hfill Fall 2013
+\end{itemize}
+\textit{Undergraduate Teaching Assistant, The University of Tehran:}
+\begin{itemize}
+\item Design and Analysis of Algorithms\hfill Spring 2012 
+\item Discrete Mathematics Course\hfill Spring 2012
+\item Artificial intelligence\hfill Fall 2011
+\end{itemize}
+
 
 \section{COMPUTER \\ SKILLS}
 \textbf{Proficient in C/C++}\\
 Experienced in MATLAB, Python, and Java\\
 Familiar with C\#, PHP, JavaScript, HTML, and SQL\\ 
 Other skills: Bash, git, and \LaTeX
+
+Machine Learning toolboxes: Tensorflow,
+Caffe, htk, theano, MXNet
 
 
 \end{resume}
