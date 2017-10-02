@@ -10,7 +10,8 @@
 \pagestyle{fancy}
 \chead{
 \begin{adjustwidth}{-3.5cm}{}
-\moveleft.5\hoffset\centerline{\large\bf Masood Delfarah, Ph.D. Candidate}
+\moveleft0.5\hoffset\centerline{\large\bf Masood Delfarah}
+\moveleft0.5\hoffset\centerline{\small \bf Ph.D. Candidate}
 \begin{tabular}{l r}
 \\
 \href{http://web.cse.ohio-state.edu/~delfarah.1/}{http://web.cse.ohio-state.edu/$\sim$delfarah.1}    & \hspace{2.5in}  \href{mailto:delfarah.1@osu.edu}{delfarah.1@osu.edu} \\
@@ -70,20 +71,30 @@ Microphone Array Speech Processing  & \hspace{0.3in} Statistical Machine Learnin
 \section{RESEARCH \\ EXPERIENCE}
 \textit{Graduate Research:}
 \begin{itemize}
-\item Colaborated in a team to duplicate speaker independent speech separation methods such as deep clustering deep attractor network and permutation invariant training
-\item Did augumated object detection and question answering
-\item Used Matlab to do cochannel speaker identification in reverberant conditions
-\item Implemented deep neural network to do speech separation in reverberant and anechoic conditions using matlab
-	\subitem did feature study and SFFS and group lasso
-	\subitem did anechoic training and set up experiments
-	\subitem did reverberant two-stage Drev and denoise using tensorflow
-\item did DNN-based cochannel speaker identification 
+\item Used MATLAB to do DNN-based speech separation
+	\begin{itemize}
+	\item Studied a wide range of acoustic features for speech separation and designed feature combinations based on feature selection methods.
+	\item Used PBS jobs on Ohio Supercomputing center with GPUs to train DNNs and RNNs for speech separation
+	\item Designed and deployed anechoic two-talker speech separation experiments for hearing impaired and normal hearing listeners
+	\item Studied and implemented microphone array methods for dereverberation and separation under tensorflow framework
+	\item Designed a two-stage RNN algorithm to do speech dereverberation and denoising
+	\end{itemize}
+
+\item Managed to implement speaker-independent two-talker separation within a team using tensorflow deep clustering, deep attractor networks and permutation invariant training.
+	\begin{itemize}
+	\item Did some experiments using BLSTMs and reverberant speech
+	\end{itemize}
+
+\item Did augmentation of object-detection and visual question answering systems in a team of 3. (ongoing project)
+\item Did two-talker speaker identification on reverberant speech
+\item Used Java to implement pitch-tracking  and speech segmentation based on Computational auditory Scene analysis
+
 \end{itemize}
 
 \textit{Undergraduate research:}
 \begin{itemize}
 \item \textbf{(BsC thesis)} Designing and implementing a learning style classifier for toddlers, based on cognitive traits of childrenand Information Processing Theories on the ELCK-12 dataset.
-\item Proposing a knowlwdge-base for disaster management Superviser
+\item Proposing a knowledge-base for disaster management
 \item Analyzed Persian Blogosphere to Obtain Social Network of Iranian Politicians and visualizing and graph clustering using \textit{Gephi}.
 \end{itemize}
 
@@ -107,16 +118,11 @@ Microphone Array Speech Processing  & \hspace{0.3in} Statistical Machine Learnin
 \item Artificial intelligence\hfill Fall 2011
 \end{itemize}
 
-
 \section{COMPUTER \\ SKILLS}
-\textbf{Proficient in C/C++}\\
-Experienced in MATLAB, Python, and Java\\
-Familiar with C\#, PHP, JavaScript, HTML, and SQL\\ 
-Other skills: Bash, git, and \LaTeX
-
-Machine Learning toolboxes: Tensorflow,
-Caffe, htk, theano, MXNet
-
+\textbf{Proficient in C/C++}, and experienced in MATLAB, Python, Java, and Bash script\\
+Machine learning toolboxes: \textbf{Tensorflow},
+Caffe, HTK, pyTorch, and MXNet\\
+Other skills: Git, and \LaTeX
 
 \end{resume}
 \end{document}
