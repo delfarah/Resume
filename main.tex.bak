@@ -1,0 +1,137 @@
+\documentclass[margin, 10pt]{res}
+
+\usepackage{helvet}
+\usepackage[hidelinks]{hyperref}
+\usepackage{changepage}   % for the adjustwidth environment
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+ 
+\pagestyle{fancy}
+\chead{
+\begin{adjustwidth}{-3.5cm}{}
+\moveleft0.5\hoffset\centerline{\large\bf Masood Delfarah}
+\moveleft0.5\hoffset\centerline{\small \bf Ph.D. Candidate}
+\begin{tabular}{l r}
+\\
+\href{http://web.cse.ohio-state.edu/~delfarah.1/}{http://web.cse.ohio-state.edu/$\sim$delfarah.1}    & \hspace{2.5in}  \href{mailto:delfarah.1@osu.edu}{delfarah.1@osu.edu} \\
+\href{https://www.linkedin.com/in/mdelfarah/}{https://www.linkedin.com/in/mdelfarah/}    & \hspace{2.5in}  {Tel: (614) 477-7344} \\
+\end{tabular}
+\\
+\moveleft\hoffset\vbox{\hrule width\resumewidth height .5pt}\smallskip
+\end{adjustwidth}
+}
+%\rfoot{\thepage}
+
+%\setlength{\sectionwidth}{-30.0pt}
+
+\setlength{\headheight}{45.0pt}
+\setlength{\footskip}{20.0pt}
+
+\setlength{\textwidth}{5.1in} % Text width of the document
+\setlength{\textheight}{8.1in} % Text width of the document
+
+\begin{document}
+\begin{resume}
+\section{RESEARCH\\INTERESTS}
+
+\begin{tabular}{l l}
+\textbf{Monaural Speech Enhancement}    & \hspace{0.3in}   Automatic Speech Recognition\\ 
+\textbf{Speech Dereverberation}    & \hspace{0.3in}    Deep Learning\\ 
+Microphone Array Speech Processing  & \hspace{0.3in} Statistical Machine Learning
+\end{tabular}
+
+\section{EDUCATION}
+\textbf{Department of Computer Science and Eng., The Ohio State University }  \\
+\textbf{Ph.D. candidate in Computer Engineering} \hfill Fall 2013 $-$ Present \\
+\textbf{M.Sc. in Computer Engineering} \hfill Fall 2013 $-$ Spring 2018 \\
+Supervisor: Professor DeLiang Wang
+
+\textbf{School of Electrical and Computer Engineering, The University of Tehran}\\
+\textbf{B.Sc. in Computer Engineering} \hfill Fall 2008 $-$ Spring 2013 \\
+GPA: 16.57/20.00 (top 10\%).
+
+
+\section{PUBLICATIONS AND PRESENTATIONS}
+\textit{Journal papers:}
+\begin{itemize}
+\item Eric W. Healy, \textbf{Masood Delfarah}, Jordan L. Vasko, Brittney L. Carter, and DeLiang Wang, ``An algorithm to increase intelligibility for hearing-impaired listeners in the presence of a competing talker'' \textit{The Journal of the Acoustical Society of America}, vol. 141, pp. 4230$-$4239, 2017.
+\item \textbf{Masood Delfarah} and DeLiang Wang, ``Features for masking-based monaural speech separation in reverberant conditions'' \textit{IEEE/ACM Transactions on Audio, Speech, and Language Processing}, vol. 25, pp. 1085$-$1094, 2017.
+\item Maryam S. Mirian, \textbf{Masood Delfarah}, and Behzad Moshiri, ``Proposing a Unified Knowledge and Experience-based System using Information Fusion Approach to Facilitate the Disaster Management Process'' \textit{Disaster Management Knowledge Quarterly} (in Persian), vol. 2, pp. 215$-$227, 2012. 
+\end{itemize}
+
+\textit{Conference papers:}
+\begin{itemize}
+\item \textbf{Masood Delfarah} and DeLiang Wang,``A feature study for masking-based reverberant speech separation'' \textit{Proceedings of INTERSPEECH-16}, pp. 555$-$559, 2016.
+\item \textit{(In preparation)} ``Speaker-independent two-talker speech separation in reverberant conditions''.
+\end{itemize}
+
+\textit{Selected poster presentations:}
+\begin{itemize}
+\item Eric W. Healy, \textbf{Masood Delfarah}, Jordan L. Vasko, and Brittney L. Carter, and DeLiang Wang, ``Can a trained deep neural network be implemented into hearing technology?'' \textit{Acoustics '17 Boston}, 2017.
+\item Eric W. Healy, \textbf{Masood Delfarah}, Jordan L. Vasko, Brittney L. Carter, and DeLiang Wang, ``An algorithm to increase intelligibility for hearing-impaired listeners in the presence of a competing talker'' \textit{Acoustics '17 Boston}, 2017.
+\end{itemize}
+
+\section{RESEARCH \\ EXPERIENCE}
+\textit{Graduate Research:}
+\begin{itemize}
+\item Implemented and performed simulations in MATLAB to investigate DNN-based speech separation algorithms:
+	\begin{itemize}
+	\item Studied a wide range of acoustic-phonetic features for speech separation and designed complementary feature combinations based on feature selection methods.
+	\item Utilized parallel computation and GPUs on the Ohio Supercomputing Center for large-scale DNN and RNN training for speech separation in reverberant conditions.
+	\item Designed experiments for speech intelligibility assessment of normal hearing and hearing-impaired listeners
+	\item Designed a two-stage RNN algorithm to do joint dereverberation and speech denoising
+	\item Investigated two-talker speaker identification in reverberant mixtures
+	\item Investigated microphone array methods for dereverberation of simulated and recorded reverberant speech.
+	\end{itemize}
+
+\item Collaborated with lab members to implement open-set speaker separation methods, deep clustering, deep attractor network, and permutation invariant training:
+	\begin{itemize}
+	\item Utilized distributed computation over a grid of nodes and GPU servers to perform data parallelism in Tensorflow.
+	\item Evaluated performance of the algorithms for speech separation in reverberant conditions.
+	\end{itemize}
+
+\item Selected course projects:
+	\begin{itemize}
+		\item Pitch-tracking and speech segmentation based on techniques in Computational auditory Scene analysis using Java
+		\item Augmentation of object-detection and visual question answering 
+		\item Studying transfer learning in deep Q-learning algorithm (ongoing project)
+	\end{itemize}
+
+\end{itemize}
+
+\textit{Undergraduate research:}
+\begin{itemize}
+\item \textbf{(B.Sc. Thesis)} Designing and implementing a learning style classifier for toddlers, based on cognitive traits of childrenand Information Processing Theories on the ELCK-12 dataset.
+\item Proposing a knowledge-base for disaster management
+\item Analyzed Persian Blogosphere to Obtain Social Network of Iranian Politicians and visualizing and graph clustering using \textit{Gephi}.
+\end{itemize}
+
+\section{PROFESSIONAL \\ EXPERIENCE}
+\textit{Reviewer:}
+\begin{itemize}
+\item IEEE/ACM Transactions on Audio, Speech, and Language Processing
+\item Speech Communication
+\end{itemize}
+
+\textit{Graduate Teaching Assistant, The Ohio State University:}
+\begin{itemize}
+\item Modeling and Problem Solving with Spreadsheets and Databases\hfill Spring 2017
+\item Modeling and Problem Solving with Spreadsheets and Databases\hfill Spring 2014 
+\item Foundations I: Discrete Structures\hfill Fall 2013
+\end{itemize}
+\textit{Undergraduate Teaching Assistant, The University of Tehran:}
+\begin{itemize}
+\item Design and Analysis of Algorithms\hfill Spring 2012 
+\item Discrete Mathematics Course\hfill Spring 2012
+\item Artificial intelligence\hfill Fall 2011
+\end{itemize}
+
+\section{COMPUTER \\ SKILLS}
+\textbf{Proficient in C/C++}, and experienced in MATLAB, Python, Java, and Unix Bash script\\
+Machine learning toolboxes: \textbf{Tensorflow},
+Caffe, HTK, pyTorch, and MXNet\\
+Other skills: Git, and \LaTeX
+
+\end{resume}
+\end{document}
