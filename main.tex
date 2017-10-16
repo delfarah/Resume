@@ -7,6 +7,9 @@
 \usepackage{fancyhdr}
 \renewcommand{\headrulewidth}{0pt}
  
+ \usepackage{enumitem}
+\setlist[itemize]{itemsep=0em,topsep=-1.3em}
+
 \addtolength{\topmargin}{-.05in}
  
 \pagestyle{fancy}
@@ -24,7 +27,7 @@
 \end{adjustwidth}
 }
 %\rfoot{\thepage}
-\fancyfoot{\thepage}
+%\fancyfoot{\thepage}
 
 %\setlength{\sectionwidth}{-30.0pt}
 
@@ -52,7 +55,7 @@ Speech Dereverberation     \hspace{1.32in}    Deep Learning\\
 Microphone Array Speech Processing   \hspace{0.5in} Statistical Machine Learning
 
 \section{COMPUTER \\ SKILLS}
-\begin{itemize}\setlength\itemsep{-0.3em}
+\begin{itemize}
 \item \textit{Programming languages}: expert in C/C++, MATLAB, and Python and proficient in Java and Unix shell script.
 \item \textit{Machine learning toolboxes}: expert in Tensorflow and familiar with HTK, Keras, and PyTorch.
 \item \textit{Other skills}: experienced in Git and LaTeX.
@@ -60,51 +63,50 @@ Microphone Array Speech Processing   \hspace{0.5in} Statistical Machine Learning
 
 \section{RESEARCH \\ EXPERIENCE}
 \textit{Graduate Research:}
-\begin{itemize}\setlength\itemsep{-0.3em}
-\item Feature study for two-talker speech separation in reverberant conditions:
-	\begin{itemize}\setlength\itemsep{-0.3em}
-	\item Utilized parallel computation and GPU servers on the Ohio Supercomputing Center to perform large-scale DNN training for speech separation.
-	\item Studied a wide range of acoustic-phonetic features and designed novel feature combinations based on feature selection methods.
+\begin{itemize}
+\item Studied features for two-talker speech separation in reverberant conditions:
+	\begin{itemize}
+	\item Utilized parallel computation and GPU servers on the Ohio Supercomputing Center clusters and performed large-scale DNN training.
+	\item Derived novel feature combinations based on feature selection methods.
 	\end{itemize}
-\item DNN-based two-talker separation algorithm:
-	\begin{itemize}\setlength\itemsep{-0.3em}
-	\item Designed and implemented a two-talker separation algorithm.
-	\item Deployed a development set to optimize the performance of the DNN by studying regularization methods and network architectures.
-	\item Collaborated with the Speech Psychoacoustics Laboratory at the Department of Speech and Hearing Science to perform speech intelligibility tests on human listeners.
-	\item Performed statistical analysis on the test results and reported substantial intelligibility improvement for hearing-impaired listeners.
+\item Designed and implemented a two-talker separation algorithm:
+	\begin{itemize}
+	\item Employed a development set to optimize the performance of the DNN by studying regularization methods and network architectures.
+	\item Collaborated with the Speech Psychoacoustics Laboratory in the Department of Speech and Hearing Science to perform speech intelligibility tests with human listeners.
+	\item Performed statistical analysis of the test results and reported substantial intelligibility improvement for hearing-impaired listeners.
 	\end{itemize}
-\item Designed and implemented a two-stage DNN to perform joint dereverberation and speech denoising.
+\item Designed and implemented a two-stage bidirectional LSTM to perform joint dereverberation and speech separation.
 \item Investigated two-talker speaker identification in reverberant mixtures.
 \item Studied microphone array methods for dereverberation of simulated and recorded reverberant speech signals.
 \item Collaborated with lab members to study open-set speaker separation methods:
-	\begin{itemize}\setlength\itemsep{-0.3em}
+	\begin{itemize}
 	\item Successfully implemented deep clustering, deep attractor network, and permutation invariant training algorithms.
 	\item Utilized distributed computation over a grid of nodes and GPU servers to perform data parallelism in Tensorflow.
-	\item Studied the generalization of the algorithms to reverberant conditions.
+	\item Studied the generalization of the above algorithms to reverberant conditions.
 	\end{itemize}
 \item Performed pitch-tracking and speech segmentation based on the techniques in Computational Auditory Scene Analysis (CASA) using Java.
-\item Evaluated the effects of augmenting object detection into visual question answering (VQA) algorithms.
+\item Evaluated the effects of combining visual question answering (VQA) algorithms with object detection and image segmentation.
 \item Studied transfer learning in the reinforcement learning framework (ongoing project).
 \end{itemize}
 \textit{Undergraduate research:}
-\begin{itemize}\setlength\itemsep{-0.3em}
+\begin{itemize}
 \item (B.Sc. Thesis) Designed and implemented a decision tree to classify learning styles of toddlers, using the ECLS-K dataset provided by the U.S. Department of Education (Supervisor: Dr. Maryam S. Mirian).
 \item Proposed a knowledge-based approach for the disaster management process.
 \end{itemize}
 \section{PROFESSIONAL\\EXPERIENCE}
 \textit{Reviewer:}
-\begin{itemize}\setlength\itemsep{-0.3em}
+\begin{itemize}
 \item IEEE/ACM Transactions on Audio, Speech, and Language Processing
 \item Speech Communication
 \end{itemize}
 \textit{Graduate Teaching Assistant, The Ohio State University:}
-\begin{itemize}\setlength\itemsep{-0.3em}
+\begin{itemize}
 \item Modeling and Problem Solving with Spreadsheets and Databases\hfill {\footnotesize Spring 2017}
 \item Modeling and Problem Solving with Spreadsheets and Databases\hfill {\footnotesize Spring 2014}
 \item Foundations I: Discrete Structures\hfill {\footnotesize Fall 2013}
 \end{itemize}
 \textit{Undergraduate Teaching Assistant, University of Tehran:}
-\begin{itemize}\setlength\itemsep{-0.3em}
+\begin{itemize}
 \item Design and Analysis of Algorithms\hfill {\footnotesize Spring 2012}
 \item Discrete Mathematics\hfill {\footnotesize Spring 2012}
 \item Artificial Intelligence\hfill {\footnotesize Fall 2011}
@@ -112,17 +114,17 @@ Microphone Array Speech Processing   \hspace{0.5in} Statistical Machine Learning
 
 \section{PUBLICATIONS AND PRESENTATIONS}
 \textit{Journal papers:}
-\begin{itemize}\setlength\itemsep{-0.3em}
+\begin{itemize}
 \item Eric W. Healy, \textbf{Masood Delfarah}, Jordan L. Vasko, Brittney L. Carter, and DeLiang Wang, ``An algorithm to increase intelligibility for hearing-impaired listeners in the presence of a competing talker'' \textit{The Journal of the Acoustical Society of America}, vol. 141, pp. 4230$-$4239, 2017.
 \item \textbf{Masood Delfarah} and DeLiang Wang, ``Features for masking-based monaural speech separation in reverberant conditions'' \textit{IEEE/ACM Transactions on Audio, Speech, and Language Processing}, vol. 25, pp. 1085$-$1094, 2017.
 \item Maryam S. Mirian, \textbf{Masood Delfarah}, and Behzad Moshiri, ``Proposing a Unified Knowledge and Experience-based System using Information Fusion Approach to Facilitate the Disaster Management Process'' \textit{Disaster Management Knowledge Quarterly} (in Persian), vol. 2, pp. 215$-$227, 2012. 
 \end{itemize}
 \textit{Conference papers:}
-\begin{itemize}\setlength\itemsep{-0.3em}
+\begin{itemize}
 \item \textbf{Masood Delfarah} and DeLiang Wang,``A feature study for masking-based reverberant speech separation'' \textit{Proceedings of INTERSPEECH-16}, pp. 555$-$559, 2016.
 \end{itemize}
 \textit{Selected poster presentations:}
-\begin{itemize}\setlength\itemsep{-0.3em}
+\begin{itemize}
 \item Eric W. Healy, \textbf{Masood Delfarah}, Jordan L. Vasko, and Brittney L. Carter, and DeLiang Wang, ``Can a trained deep neural network be implemented into hearing technology?'' \textit{Acoustics '17 Boston}, 2017.
 \item Eric W. Healy, \textbf{Masood Delfarah}, Jordan L. Vasko, Brittney L. Carter, and DeLiang Wang, ``An algorithm to increase intelligibility for hearing-impaired listeners in the presence of a competing talker'' \textit{Acoustics '17 Boston}, 2017.
 \end{itemize}
